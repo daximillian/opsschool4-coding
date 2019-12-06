@@ -57,8 +57,18 @@ def print_yaml(ppl_sorted, bracket_list):
             print('{}-{}:'.format(curr_min, curr_max))
 
 
-if __name__ == '__main__':
+def main():
+    """Sort a JSON comprised of tuples of people and ages,
+    and a list of age brackets, and print out a YAML of people
+    sorted to age brackets. People's ages must be equal or higher than the lower limit of
+    the bracket and lower than the higher limit of the bracket. Lowest possible age is 0,
+    highest possible age is the maximum age given, +1."""
+
     filename = 'hw.json'
     ppl_ages = prep_data(filename)[0]
     age_brackets = prep_data(filename)[1]
     print_yaml(ppl_ages, age_brackets)
+
+
+if __name__ == '__main__':
+    main()
