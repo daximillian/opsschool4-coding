@@ -6,4 +6,5 @@ A python scrip that takes a json comprised of tuples of people and ages, and a l
 
 __To run:__
 chmod +x json_to_yaml_ppl.py
+
 ./json_to_yaml_ppl.py
